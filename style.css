@@ -2,6 +2,9 @@
   width: 100%;
   height: 100vh;
 }
+body {
+  background: #090e18;
+}
 
 * {
   margin: 0;
