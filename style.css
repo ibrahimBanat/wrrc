@@ -1,0 +1,146 @@
+.ctr {
+  width: 100%;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+path[id='Ibrahim Banat'] {
+  /* opacity: 0; */
+  stroke-dasharray: 1967;
+  stroke-dashoffset: 1967;
+  animation: sign 1s ease;
+  animation-fill-mode: backwards;
+}
+
+@keyframes sign {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.id {
+  transition: all 1s ease;
+  animation: fade 2s ease;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+g .fadein {
+  opacity: 0;
+  animation: 10s ty ease forwards;
+  transition: 10s all;
+  animation-delay: calc(var(--order) * 400ms);
+}
+
+@keyframes ty {
+  20% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  30%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#Vector {
+  stroke-dasharray: 1073;
+  stroke-dashoffset: 1073;
+  animation: sign 2.5s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#Vector1 {
+  stroke-dasharray: 206;
+  stroke-dashoffset: 206;
+  animation: sign 1s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#Vector2 {
+  stroke-dasharray: 1036;
+  stroke-dashoffset: 1036;
+  animation: sign 2.5s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#Vector3 {
+  stroke-dasharray: 163;
+  stroke-dashoffset: 163;
+  animation: sign 0.5s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.Arrow {
+  /* display: none; */
+  /* opacity: 0; */
+  transition: 1s all;
+  animation: fas 3s ease forwards;
+  /* animation-delay: 1s; */
+}
+@keyframes fas {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10%);
+  }
+  70%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeup {
+  animation: 6s fadeup ease;
+  transition: all 1s;
+  animation-delay: calc(var(--order) * 250ms);
+}
+
+@keyframes fadeup {
+  0%,
+  70% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  71% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
